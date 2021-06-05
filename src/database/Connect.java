@@ -8,7 +8,7 @@ public class Connect {
     public Connect(String username, String Password){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oes","root","ssandhyar@123");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oes","root","");
             System.out.println("Connection established");  
             
         }catch(ClassNotFoundException e){
